@@ -7,6 +7,10 @@ from flask_migrate import Migrate
 
 from models import db, User, Review, Game
 
+
+# export FLASK_APP=app.py
+# flask db migrate
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
